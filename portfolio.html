@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+      }
+
+      #profile-info {
+        display: flex;
+        margin-top: 80px;
+      }
+      #right-side {
+        padding: 20px;
+      }
+      #right-side p {
+        font-size: 20px;
+        color: #3d3d3d;
+      }
+      #avatar {
+        border: 2px solid #f7d039;
+        border-radius: 50%;
+        width: 192px;
+        height: 192px;
+        padding: 10px;
+      }
+
+      #avatar-img {
+        width: 192px;
+        height: 192px;
+      }
+      #fullname {
+        font-size: 46px;
+        color: #3d3d3d;
+        line-height: 40px;
+      }
+      #social-icons {
+        display: flex;
+        gap: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="profile-info">
+      <div id="avatar">
+        <img src="./avatar.png" alt="" id="avatar-img" />
+      </div>
+      <div id="right-side">
+        <h1 id="fullname">Victor Alvarado</h1>
+        <p>Software Engineer</p>
+
+        <div id="social-icons">
+          <img src="./Brands/github.svg" alt="" />
+          <img src="./Brands/linkedin.svg" alt="" />
+          <img src="./Brands/twitter.svg" alt="" />
+          <img src="./Brands/youtube.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
