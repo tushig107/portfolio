@@ -13,6 +13,8 @@
       body {
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
       }
 
       #profile-info {
@@ -46,6 +48,26 @@
       #social-icons {
         display: flex;
         gap: 16px;
+        align-items: center;
+      }
+      #projects {
+        width: 800px;
+        margin-top: 100px;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      #projects img {
+        border: 1px solid black;
+        border-radius: 20px;
+        transition: transform 2s ease-in-out;
+      }
+
+      #projects img:hover {
+        height: 236px;
+        width: 372px;
       }
     </style>
   </head>
@@ -60,12 +82,39 @@
         <p>Software Engineer</p>
 
         <div id="social-icons">
-          <img src="./Brands/github.svg" alt="" />
-          <img src="./Brands/linkedin.svg" alt="" />
-          <img src="./Brands/twitter.svg" alt="" />
-          <img src="./Brands/youtube.svg" alt="" />
+          <a href="https://github.com/"><img src="github.svg" alt="" /></a>
+          <a href="https://x.com/"><img src="Vector.svg" alt="" /></a>
+          <a href="linkedin.com"><img src="linkedin.svg" alt="" /></a>
+          <a href="https://www.youtube.com/"
+            ><img src="youtube.svg" alt=""
+          /></a>
         </div>
       </div>
+    </div>
+    <div id="projects">
+      <a href="https://calculator-seven-lemon.vercel.app/" target="_blank"
+        ><img class="project" src="calc.png" alt="" width="362" height="226"
+      /></a>
+      <a href="https://guess-the-number-nine-opal.vercel.app/" target="_blank"
+        ><img class="project" src="ss2.png" alt="" width="362" height="226"
+      /></a>
+      <a href="https://rock-paper-scissors-nu-one.vercel.app/" target="_blank"
+        ><img class="project" src="rpsss.png" alt="" width="362" height="226"
+      /></a>
+      <a href="https://find-bigger-number.vercel.app/" target="_blank"
+        ><img class="project" src="ss.png" alt="" width="362" height="226"
+      /></a>
+      <a href="https://counter-sooty-ten.vercel.app/" target="_blank"
+        ><img class="project" src="counter.png" alt="" width="362" height="226"
+      /></a>
+      <a href="https://starbucks-eight-chi.vercel.app/" target="_blank"
+        ><img
+          class="project"
+          src="starbucks.png"
+          alt=""
+          width="362"
+          height="226"
+      /></a>
     </div>
   </body>
 </html>
